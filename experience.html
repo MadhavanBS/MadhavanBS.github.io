@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M A D H A V A N</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Madhavan</a>
+        <div class="nav-links">
+            <a href="index.html">ABOUT</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="certifications.html">CERTIFICATIONS</a>
+            <a href="experience.html" class="active">EXPERIENCE</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Professional Experience</h1>
+            <p>3+ years of experience as a Machine Learning Engineer at Bosch, building and deploying ML systems across data science and platform engineering teams.</p>
+        </header>
+
+        <section class="experience-card">
+            <img src="assets/bosch_digital_twin_symbol.png" alt="Bosch Digital Twin Industries logo" class="experience-logo">
+            <div class="experience-info">
+                <div class="experience-company-row">
+                    <a href="https://www.bosch-digital-twin-industries.com/" target="_blank" rel="noopener noreferrer">Bosch Digital Twin Industries</a>
+                    <span class="experience-dates">July 2024 &ndash; Dec 2025</span>
+                </div>
+                <p class="experience-role">Machine Learning Engineer (Digital Twin) &mdash; ADNOC Project</p>
+                <ul class="experience-bullets">
+                    <li>Developed and delivered a multimodal ML + physics-based predictive maintenance system, diagnosing 100+ faults (e.g. mechanical seal failure, impeller thinning, clearance faults) across 20+ turbomachineries.</li>
+                    <li>Optimized ML and time series forecasting models (Prophet, XGBoost, Polynomial Regression) for Remaining Useful Life prediction and fault severity classification of machine components.</li>
+                    <li>Leveraged MLflow for experiment tracking, model version control, and performance benchmarking, enabling reproducible and improved prediction accuracy through hyperparameter optimization.</li>
+                    <li>Implemented operational KPIs such as MTTF, MTBF, and MRR for a dashboard enabling proactive maintenance and minimizing downtime.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="experience-card">
+            <img src="assets/bgsw_logo.png" alt="Bosch Global Software Technologies logo" class="experience-logo">
+            <div class="experience-info">
+                <div class="experience-company-row">
+                    <a href="https://www.bosch-softwaretechnologies.com/en/" target="_blank" rel="noopener noreferrer">Bosch Global Software Technologies</a>
+                    <span class="experience-dates">Aug 2022 &ndash; July 2024</span>
+                </div>
+                <p class="experience-role">Machine Learning Engineer (Automation Platform)</p>
+                <ul class="experience-bullets">
+                    <li>Optimized a metrics dashboard by restructuring data storage and implementing indexed aggregation MongoDB queries, improving loading speed by 10x &mdash; directly contributing to a $100K contract renewal and earning a Stand-out Performer Award.</li>
+                    <li>Developed a Python-based chatbot microservices backend using FastAPI, supporting async CRUD operations and file handling via Nginx and RabbitMQ, with MongoDB queries optimized for frontend pagination.</li>
+                    <li>Deployed services and CronJobs on Red Hat OpenShift, creating deployment, service, and ingress config files, automated via Ansible for CI/CD.</li>
+                    <li>Designed a hybrid document retrieval system combining semantic search (RoBERTa embeddings + cosine similarity) with keyword search (BM25) using Elasticsearch as a vector store for the BAP document platform.</li>
+                    <li>Fine-tuned (SFT) a BART summarizer and deployed it via Docker, enriching the semantic search experience on the BAP document platform.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/madhavanbs1904/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MadhavanBS" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:madhavanbs1904@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">&copy; Copyright 2026 Madhavan Balasubramaniam.</p>
+        </footer>
+    </main>
+</body>
+</html>

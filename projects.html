@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M A D H A V A N</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Madhavan</a>
+        <div class="nav-links">
+            <a href="index.html">ABOUT</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="certifications.html">CERTIFICATIONS</a>
+            <a href="experience.html">EXPERIENCE</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Featured Projects</h1>
+            <p>A collection of my recent work in Machine Learning, NLP, and Computer Vision.</p>
+        </header>
+
+        <section class="project-item">
+            <div class="project-header">
+                <div class="project-title">
+                    <h2>DeepDoc.AI</h2>
+                </div>
+                <a href="https://github.com/MadhavanBS" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+            <p class="project-desc">
+                Developed a Python-based RAG chatbot for intelligent document analysis using LangChain and Ollama's Llama 3.2 model. It enables contextual question answering across multiple documents by implementing a hybrid retrieval pipeline that combines BGE embeddings, BM25, and FAISS.
+            </p>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="assets/deepdoc2.png" alt="DeepDoc.AI Dashboard Overview"></li>
+                        <li class="carousel-slide"><img src="assets/deepdoc1.png" alt="DeepDoc.AI Analytics and Graphs"></li>
+                        <li class="carousel-slide"><img src="assets/deepdoc0.png" alt="DeepDoc.AI Document Flow and Hybrid RAG"></li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="project-item">
+            <div class="project-header">
+                <div class="project-title">
+                    <h2>Tiny Recursive Models: Paper Implementation</h2>
+                </div>
+                <a href="https://github.com/MadhavanBS/MiniRecursiveModels" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+            <p class="project-desc">
+            We reimplemented the Tiny Recursive Model (TRM) from scratch and studied how different design choices affect its ability to solve Sudoku puzzles through recursive reasoning. We ran more than 60 experiments to analyze the impact of data augmentation, recursion depth, model size, attention, and other hyperparameters on accuracy and generalization. Our results showed that deeper recursive reasoning improved performance much more than simply making the model larger, highlighting the power of small recursive models for reasoning tasks.
+            </p>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="assets/trm1.png" alt="Weights & Biases Dashboard View"></li>
+                        <li class="carousel-slide"><img src="assets/trm4.png" alt="Lcycle vs Hcycle experimentation"></li>
+                        <li class="carousel-slide"><img src="assets/trm2.png" alt="TRM Model Architecture Training & Testing"></li>
+                        <li class="carousel-slide"><img src="assets/trm3.png" alt="TRM Recursive Training"></li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="project-item">
+            <div class="project-header">
+                <div class="project-title">
+                    <h2>Neural Style Transfer</h2>
+                </div>
+                <a href="https://github.com/MadhavanBS" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+            <p class="project-desc">
+                An implementation of Neural Style Transfer utilizing deep neural networks to blend the content of a target image with the artistic style of another. This project extracts feature maps from intermediate layers of a pre-trained CNN to optimize the generated image.
+            </p>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="assets/nst1.png" alt="Neural Style Transfer - Building"></li>
+                        <li class="carousel-slide"><img src="assets/nst2.png" alt="Neural Style Transfer - Tree"></li>
+                        <li class="carousel-slide"><img src="assets/nst3.png" alt="Neural Style Transfer - Abstract"></li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="project-item">
+            <div class="project-header">
+                <div class="project-title">
+                    <h2>Trash Segmentation with U-net</h2>
+                </div>
+                <a href="https://github.com/MadhavanBS/Trash-Segmentation-with-Unet" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+            <p class="project-desc">
+                Implementation of a U-Net architecture from scratch using Conv2D blocks in TensorFlow. This model was trained to accurately segment underwater ocean images, identifying and masking marine debris and trash in complex sub-aquatic environments.
+            </p>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="assets/trash_seg1.png" alt="Trash Segmentation - Can"></li>
+                        <li class="carousel-slide"><img src="assets/trash_seg2.png" alt="Trash Segmentation - Plastic"></li>
+                        <li class="carousel-slide"><img src="assets/trash_seg3.png" alt="Trash Segmentation - Debris"></li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/madhavanbs1904/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MadhavanBS" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:madhavanbs1904@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">&copy; Copyright 2026 Madhavan Balasubramaniam.</p>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.carousel-wrapper').forEach(carousel => {
+                const track = carousel.querySelector('.carousel-track');
+                const slides = Array.from(track.children);
+                const nextBtn = carousel.querySelector('.next-btn');
+                const prevBtn = carousel.querySelector('.prev-btn');
+                let idx = 0;
+
+                const update = () => { track.style.transform = `translateX(-${idx * 100}%)`; };
+
+                nextBtn.addEventListener('click', () => { idx = (idx + 1) % slides.length; update(); });
+                prevBtn.addEventListener('click', () => { idx = (idx - 1 + slides.length) % slides.length; update(); });
+            });
+        });
+    </script>
+</body>
+</html>
