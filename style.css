@@ -19,6 +19,7 @@
 
 html {
     background-color: var(--bg-color);
+    overflow-x: hidden;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -31,6 +32,8 @@ body {
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 
 a {
@@ -86,6 +89,41 @@ a {
 
 .nav-links a.active {
     color: var(--text-primary);
+}
+
+/* ── Mobile Nav Toggle (hamburger) ── */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ── Main Container ── */
@@ -842,6 +880,10 @@ a {
         align-items: center;
     }
 
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
     .tags {
         justify-content: center;
     }
@@ -860,8 +902,39 @@ a {
         flex-direction: column;
     }
 
+    .nav-toggle {
+        display: flex;
+    }
+
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgba(5, 5, 5, 0.97);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--accent-color);
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.open {
+        max-height: 300px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--accent-color);
+        font-size: 0.85rem;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
     }
 
     .carousel-btn {
